@@ -1,4 +1,4 @@
-# Odroid hc1 커널을 크로스 컴파일 하기 
+# Odroid hc1을 위한 커널 크로스 컴파일
 
 사전 준비물
 * 리눅스 커널 소스 파일 (https://www.kernel.org/)
