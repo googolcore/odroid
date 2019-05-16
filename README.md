@@ -42,4 +42,29 @@ odroid_5.1.2_20190516.tgz
 
 
 ## 적용 방법
-1. 추후 작성
+1. 생성된 파일을 odroid에 복사
+2. 압축 해제
+<pre>
+# tar zxvf odroid_5.1.2_20190516.tgz
+</pre>
+3. 적용
+<pre>
+# cd target_20190516/
+# sh update.sh
+update-initramfs: Generating /boot/initrd.img-5.1.2
+Image Name:   initrd.img-5.1.2
+Created:      Thu May 16 16:37:23 2019
+Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+Data Size:    8344383 Bytes = 8148.81 KiB = 7.96 MiB
+Load Address: 00000000
+Entry Point:  00000000
+</pre>
+4. 재부팅
+<pre>
+# reboot
+</pre>
+5. 확인
+<pre>
+# uname -a
+Linux Venus 5.1.2 #1 SMP PREEMPT Thu May 16 16:21:17 KST 2019 armv7l armv7l armv7l GNU/Linux
+</pre>
