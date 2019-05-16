@@ -8,8 +8,16 @@
 
 ## 사전 준비 단계
 
-1. 크로스 컴파일러 다운로드 및 설치
-
+1. 크로스 컴파일러 다운로드
+<pre>
+# cd /opt/
+# wget https://releases.linaro.org/components/toolchain/binaries/7.4-2019.02/arm-linux-gnueabihf/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf.tar.xz
+</pre>
+2. 압축 해제
+<pre>
+# xz -d gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf.tar.xz
+# tar xvf gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf.tar
+</pre>
 
 ## 사용법
 
